@@ -26,16 +26,35 @@ exports.list = function(req, res){
 
 var getDailyPhotoSummary = function(req,res,cameraName) {
 
+
+
+  var photoMap = {};
+
   fs.readdir(photoProperties[cameraName], function(err, files) {
     for( var i = 0; i < files.length; i++) {
       console.log("file: " + files[i]);
       var parts = files[i].split("_");
-      console.log("TS: " + parts[2] + " ID: " + parts[3].split(/\./)[0]);
+      var index = parts[3].split(/\./)[0];
+      console.log("TS: " + parts[2] + " Index: " + index );
       var timeStamp = parts[2];
       var year = timeStamp.substring(0,4);
       var month = timeStamp.substring(4,6);
       var day = timeStamp.substring(6,8);
       console.log("YMD: " + year + "," + month + "," + day);
+      var photoData = {};
+      photoData.date = month+"/"+day+"/"+year;
+      photoData.month = month;
+      photoData.year = year;
+      photoData.day = day;
+      photoData.file = files[i];
+      photoData.index = index;
+
+      if( photoMap[photoData.date] == null ) {
+        photoMap[photoData.date] = new Array();
+      }
+      photoMap[photoData.date].push( photoData );
+
     }
+    console.log("PhotoMap: " + photoMap);
   });
 }

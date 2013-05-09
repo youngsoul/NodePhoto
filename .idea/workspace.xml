@@ -109,7 +109,7 @@
     <file path="/a.groovy" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673919967" ignored="false" />
     <file path="/a.css" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673931891" ignored="false" />
     <file path="/Dummy.txt" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1368067674852" ignored="false" />
-    <file path="/photos.js" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1368068407990" ignored="false" />
+    <file path="/photos.js" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1368070474709" ignored="false" />
     <file path="/fragment.js" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1368068165370" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +201,7 @@
       <file leaf-file-name="photos.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/photos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="39" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.8426966">
+            <state line="57" column="0" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.7468355">
               <folding />
             </state>
           </provider>
@@ -496,8 +496,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492971" sideWeight="0.6730539" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3269461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492971" sideWeight="0.6011976" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3269461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -567,11 +567,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/photos.js</url>
-          <line>32</line>
-          <option name="timeStamp" value="1" />
+          <line>57</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -664,7 +664,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/photos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="39" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.8426966">
+        <state line="57" column="0" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.7468355">
           <folding />
         </state>
       </provider>
