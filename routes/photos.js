@@ -31,6 +31,11 @@ var getDailyPhotoSummary = function(req,res,cameraName) {
       console.log("file: " + files[i]);
       var parts = files[i].split("_");
       console.log("TS: " + parts[2] + " ID: " + parts[3].split(/\./)[0]);
+      var timeStamp = parts[2];
+      var year = timeStamp.substring(0,4);
+      var month = timeStamp.substring(4,6);
+      var day = timeStamp.substring(6,8);
+      console.log("YMD: " + year + "," + month + "," + day);
     }
   });
 }
