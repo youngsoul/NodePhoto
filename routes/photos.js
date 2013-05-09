@@ -29,6 +29,8 @@ var getDailyPhotoSummary = function(req,res,cameraName) {
   fs.readdir(photoProperties[cameraName], function(err, files) {
     for( var i = 0; i < files.length; i++) {
       console.log("file: " + files[i]);
+      var parts = files[i].split("_");
+      console.log("TS: " + parts[2] + " ID: " + parts[3].split(/\./)[0]);
     }
   });
 }
