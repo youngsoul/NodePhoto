@@ -81,6 +81,9 @@ app.get('/logout', function(req,res) {
 app.get('/photos', ensureLoggedIn('/login'), function(req,res) {
   photos.list(req,res);
 });
+app.get('/photo' , ensureLoggedIn('/login'), function(req,res) {
+  photos.listByDay(req,res);
+});
 
 //app.get('/photos', ensureLoggedIn('/login', photos.list));
 //app.get('/photos', photos.list);

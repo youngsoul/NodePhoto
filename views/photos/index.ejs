@@ -30,12 +30,43 @@
           </nav>
         </div>
       </header>
-      <div class="row" id="main-content"></div>
+      <div class="row" id="main-content">
+        <p>Photos By Month</p>
+
+        <div class="accordion span2" id="months">
+          <div class="accordion-group">
+          <% for(var monthYearLabel in monthYearLabels) { %>
+            <div class="accordion-heading">
+              <a class="accordion-toggle btn" data-toggle="collapse" data-parent="#months" href="#<%= monthYearLabels[monthYearLabel].uniqueName %>"><%= monthYearLabel %></a>
+            </div>
+            <div id="<%= monthYearLabels[monthYearLabel].uniqueName %>" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <ul>
+                <% for(var index=0; index < monthYearLabels[monthYearLabel].length; index++ ) { %>
+                  <li><a href="/photo?day=<%= monthYearLabels[monthYearLabel][index].dateKey %>" class="ajax" ><%= monthYearLabels[monthYearLabel][index].dateKey %></a></li>
+                <% } %>
+                </ul>
+              </div>
+            </div>
+            <% } %>  <!-- end for var monthYearLabel -->
+
+          </div>
+        </div>
+        <div class="span10" id="picture-content-area">
+          <div class="picture-content">
+                <p>Pictures go here</p>
+          </div>
+         </div>
+      </div>
+
+
       <footer class="row"></footer>
-    </div>
+    </div>  <!-- end of container -->
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <!--script src="/bootstrap-ajax/vendor/spin.min.js"></script -->
+    <script src="/bootstrap-ajax/js/bootstrap-ajax.js"></script>
 
   </body>
 </html>
