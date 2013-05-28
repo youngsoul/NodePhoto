@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "NodePhoto",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,6 +11,10 @@
     "passport": "*",
     "passport-local": "*",
     "connect-flash": "*",
-    "connect-ensure-login":"*"
+    "connect-ensure-login":"*",
+    "walk": "*",
+    "exif": "git://github.com/cianclarke/node-exif.git",
+    "imagemagick" : "*"
+
   }
 }

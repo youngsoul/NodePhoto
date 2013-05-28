@@ -14,6 +14,8 @@ var LocalStrategy = require('passport-local').Strategy;
 var login = require('./routes/login');
 var photos = require('./routes/photos');
 var os = require('os');
+var gallery = require('./gallery');
+var util = require('util');
 
 
 var app = express();
@@ -31,14 +33,19 @@ app.use(express.session({secret: 'secret secret'})); // must be before passport.
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+app.use(gallery.middleware({static: 'public', directory: '/photosroot', rootURL: "/gallery"}));
 
-app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+
+
+//---------------------------------  These have to be the last two app.use lines --------------
+app.use(app.router);
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 //--------------  setup passport  ----------------
 passport.use(new LocalStrategy( function(username, password, done) {
@@ -84,6 +91,13 @@ app.get('/photos', ensureLoggedIn('/login'), function(req,res) {
 app.get('/photo' , ensureLoggedIn('/login'), function(req,res) {
   photos.listByDay(req,res);
 });
+app.get('/gallery*' , ensureLoggedIn('/login'), function(req,res) {
+  var data = req.gallery;
+  data.layout = false; // Express 2.5.* support, don't look for layout.ejs
+
+  res.render(data.type + '.ejs', data);
+});
+
 
 //app.get('/photos', ensureLoggedIn('/login', photos.list));
 //app.get('/photos', photos.list);
