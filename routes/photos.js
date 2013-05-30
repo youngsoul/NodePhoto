@@ -35,7 +35,7 @@ fs.exists(fileName, function(exists) {
 exports.listByDay = function(req,res) {
   var dayOf = req.param('day');
 
-  //console.log("listByDay: " + dayOf);
+  console.log("listByDay: " + dayOf);
   /*
    <div class='picture-content'>
    <p>Pictures go here</p>
@@ -56,24 +56,29 @@ exports.listByDay = function(req,res) {
 };
 
 exports.list = function(req, res){
-  if( photoMap != null ) return photoMap;
-
-  photoMap = getDailyPhotoSummary(req,res,'cam1');
-
+  console.log("photos.list");
   var monthYearLabels = {};
 
-  for( var dateKey in photoMap ) {
-    var dateParts = dateKey.split(/\//);
-    //console.log("keyList: " + dateKey + " " + dateParts[0] + ":" + dateParts[2]);
-    var monthYearLabel = monthIndexToName[Number(dateParts[0])] + " " + dateParts[2];
-    if( monthYearLabels[monthYearLabel] == null ) {
-      monthYearLabels[monthYearLabel] = [];
-    }
 
-    var dataObj = {};
-    dataObj['dateKey'] = dateKey;
-    dataObj['uniqueName'] = dateParts[0] + ":" + dateParts[2];
-    monthYearLabels[monthYearLabel].unshift(dataObj);
+  if (photoMap == null) {
+    photoMap = getDailyPhotoSummary(req, res, 'cam1');
+
+    if (photoMap != null && photoMap.length > 0) {
+
+      for (var dateKey in photoMap) {
+        var dateParts = dateKey.split(/\//);
+        //console.log("keyList: " + dateKey + " " + dateParts[0] + ":" + dateParts[2]);
+        var monthYearLabel = monthIndexToName[Number(dateParts[0])] + " " + dateParts[2];
+        if (monthYearLabels[monthYearLabel] == null) {
+          monthYearLabels[monthYearLabel] = [];
+        }
+
+        var dataObj = {};
+        dataObj['dateKey'] = dateKey;
+        dataObj['uniqueName'] = dateParts[0] + ":" + dateParts[2];
+        monthYearLabels[monthYearLabel].unshift(dataObj);
+      }
+    }
   }
 
   res.render('./photos/index', { title: 'Photos here', photoMap: photoMap, monthYearLabels: monthYearLabels });
@@ -170,7 +175,11 @@ var getDailyPhotoSummary = function(req,res,cameraName) {
 
   var photoMap = {};
   var files = fs.readdirSync(photoProperties[cameraName]);
-  photoMap = processFiles(files, photoProperties[cameraName]);
+  if( files == null || files.length == 0 ) {
+    return photoMap;
+  } else {
+    photoMap = processFiles(files, photoProperties[cameraName]);
 
-  return photoMap;
+    return photoMap;
+  }
 }

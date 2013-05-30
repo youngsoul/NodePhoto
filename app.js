@@ -83,7 +83,7 @@ app.get('/users', user.list);
 app.get('/login', login.login);
 app.get('/logout', function(req,res) {
   req.logout();
-  res.redirect('/');
+  res.redirect('/login');
 });
 app.get('/photos', ensureLoggedIn('/login'), function(req,res) {
   photos.list(req,res);

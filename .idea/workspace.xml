@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adb5bae4-7755-4033-a0d4-14faef6fa942" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/album.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/exif.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/gallery.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/photo.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/photos/index.ejs.orig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/photos/index.ejs" afterPath="$PROJECT_DIR$/views/photos/index.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/photos.js" afterPath="$PROJECT_DIR$/routes/photos.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -112,14 +106,14 @@
     <file path="$APPLICATION_HOME_DIR$/plugins/Spring/lib/spring.jar!/resources/schemas/spring-jee-2.0.xsd" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367503775629" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/SpringBatch/lib/SpringBatch.jar!/schemas/spring-batch-2.0.xsd" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367503775629" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/SpringBatch/lib/SpringBatch.jar!/schemas/spring-batch-2.1.xsd" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367503775629" ignored="false" />
-    <file path="/index.ejs" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369190983312" ignored="false" />
+    <file path="/index.ejs" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369715007760" ignored="false" />
     <file path="/a.java" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673722480" ignored="false" />
     <file path="/a.js" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673907207" ignored="false" />
     <file path="/a.html" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673898631" ignored="false" />
     <file path="/a.groovy" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673919967" ignored="false" />
     <file path="/a.css" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673931891" ignored="false" />
-    <file path="/Dummy.txt" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369677299572" ignored="false" />
-    <file path="/photos.js" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369709348966" ignored="false" />
+    <file path="/Dummy.txt" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369835959944" ignored="false" />
+    <file path="/photos.js" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369836526119" ignored="false" />
     <file path="/fragment.js" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369024416313" ignored="false" />
     <file path="/photosbyday.ejs" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369017574084" ignored="false" />
     <file path="$PROJECT_DIR$/../../GrailsDevelopment/cfdemo/grails-app/domain/com/bls/Thing.groovy" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369159518921" ignored="false" />
@@ -201,16 +195,25 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="67" selection-start="2765" selection-end="2765" vertical-scroll-proportion="0.0">
+            <state line="81" column="29" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photos.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/photos/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photos.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/photos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="2" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
+            <state line="80" column="5" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.8564014">
               <folding />
             </state>
           </provider>
@@ -219,7 +222,7 @@
       <file leaf-file-name="gallery.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gallery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="421" column="21" selection-start="12387" selection-end="12390" vertical-scroll-proportion="-252.6">
+            <state line="421" column="21" selection-start="12387" selection-end="12390" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -228,16 +231,16 @@
       <file leaf-file-name="album.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/album.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.0">
+            <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="105" selection-end="105" vertical-scroll-proportion="0.34562212">
+            <state line="15" column="20" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -246,7 +249,7 @@
       <file leaf-file-name="photo.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/photo.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="28" selection-start="537" selection-end="537" vertical-scroll-proportion="-9.6">
+            <state line="16" column="28" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -275,23 +278,23 @@
         <option value="$PROJECT_DIR$/views/login.ejs" />
         <option value="$PROJECT_DIR$/views/photos/photosbyday.ejs" />
         <option value="$PROJECT_DIR$/public/bootstrap-ajax/js/bootstrap-ajax.js" />
-        <option value="$PROJECT_DIR$/views/photos/index.ejs" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/album.ejs" />
         <option value="$PROJECT_DIR$/views/photo.ejs" />
-        <option value="$PROJECT_DIR$/routes/photos.js" />
         <option value="$PROJECT_DIR$/exif.js" />
         <option value="$PROJECT_DIR$/gallery.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/views/photos/index.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/photos.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1722" />
-    <option name="y" value="-360" />
-    <option name="width" value="1453" />
-    <option name="height" value="1131" />
+    <option name="x" value="97" />
+    <option name="y" value="32" />
+    <option name="width" value="1063" />
+    <option name="height" value="915" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -341,7 +344,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -384,13 +387,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="photos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,11 +417,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/photos" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/routes" />
-      <recent name="$PROJECT_DIR$/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -431,6 +438,9 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -442,9 +452,6 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -518,13 +525,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1722" y="-360" width="1453" height="1131" extended-state="0" />
-    <editor active="true" />
+    <frame x="97" y="32" width="1063" height="915" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32971373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971373" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39684108" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -539,10 +545,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17768301" sideWeight="0.6702863" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2408687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1671583" sideWeight="0.77666247" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22333752" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971373" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -607,12 +614,12 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/gallery.js</url>
           <line>402</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/gallery.js</url>
           <line>408</line>
           <option name="timeStamp" value="15" />
@@ -622,36 +629,32 @@
           <line>420</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
+        <line-breakpoint type="javascript">
           <url>file://$PROJECT_DIR$/gallery.js</url>
           <line>423</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/photos.js</url>
+          <line>62</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/photos.js</url>
+          <line>175</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="18" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/bootstrap-ajax/js/.jshintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/bootstrap-ajax/js/bootstrap-ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="4" selection-start="7376" selection-end="7376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/photos/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="25" selection-start="2264" selection-end="2264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="224" column="4" selection-start="7376" selection-end="7376" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -663,37 +666,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/gallery.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/IntelliJIdea12/extLibs/nodejs-v0.10.4-src/core-modules-sources/lib/events.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2741" selection-end="2741" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
+        <state line="71" column="0" selection-start="2741" selection-end="2741" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/photos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exif.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="361" selection-end="361" vertical-scroll-proportion="0.115207374">
-          <folding />
-        </state>
+        <state line="12" column="27" selection-start="361" selection-end="361" vertical-scroll-proportion="0.115207374" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/imagemagick/imagemagick.js">
@@ -703,30 +696,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/photos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="2" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="67" selection-start="2765" selection-end="2765" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/photo.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="537" selection-end="537" vertical-scroll-proportion="-9.6">
+        <state line="16" column="28" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gallery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="421" column="21" selection-start="12387" selection-end="12390" vertical-scroll-proportion="-252.6">
+        <state line="421" column="21" selection-start="12387" selection-end="12390" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -740,7 +719,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="105" selection-end="105" vertical-scroll-proportion="0.34562212">
+        <state line="15" column="20" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/photos/index.ejs.orig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="29" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/photos/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/photos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="5" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.8564014">
           <folding />
         </state>
       </provider>
