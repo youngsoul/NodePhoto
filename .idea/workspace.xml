@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adb5bae4-7755-4033-a0d4-14faef6fa942" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/photos/index.ejs.orig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/photos/index.ejs" afterPath="$PROJECT_DIR$/views/photos/index.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/photos.js" afterPath="$PROJECT_DIR$/routes/photos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NodePhoto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,7 +108,7 @@
     <file path="/a.html" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673898631" ignored="false" />
     <file path="/a.groovy" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673919967" ignored="false" />
     <file path="/a.css" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1367673931891" ignored="false" />
-    <file path="/Dummy.txt" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369835959944" ignored="false" />
+    <file path="/Dummy.txt" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369881453809" ignored="false" />
     <file path="/photos.js" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369836526119" ignored="false" />
     <file path="/fragment.js" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369024416313" ignored="false" />
     <file path="/photosbyday.ejs" changelist="adb5bae4-7755-4033-a0d4-14faef6fa942" time="1369017574084" ignored="false" />
@@ -213,7 +209,7 @@
       <file leaf-file-name="photos.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/photos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="5" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.8564014">
+            <state line="8" column="2" selection-start="317" selection-end="317" vertical-scroll-proportion="0.15873016">
               <folding />
             </state>
           </provider>
@@ -291,8 +287,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="97" />
-    <option name="y" value="32" />
+    <option name="x" value="608" />
+    <option name="y" value="22" />
     <option name="width" value="1063" />
     <option name="height" value="915" />
   </component>
@@ -344,7 +340,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -397,6 +392,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -438,9 +434,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
-      <method />
-    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -452,6 +445,9 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -525,8 +521,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="97" y="32" width="1063" height="915" extended-state="0" />
-    <editor active="false" />
+    <frame x="608" y="22" width="1063" height="915" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -636,12 +632,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/photos.js</url>
-          <line>62</line>
+          <line>65</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/photos.js</url>
-          <line>175</line>
+          <line>178</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
@@ -691,9 +687,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/imagemagick/imagemagick.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="4" selection-start="8257" selection-end="8257" vertical-scroll-proportion="0.3327616">
-          <folding />
-        </state>
+        <state line="256" column="4" selection-start="8257" selection-end="8257" vertical-scroll-proportion="0.3327616" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/photo.ejs">
@@ -726,9 +720,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/photos/index.ejs.orig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
@@ -747,7 +739,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/photos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="5" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.8564014">
+        <state line="8" column="2" selection-start="317" selection-end="317" vertical-scroll-proportion="0.15873016">
           <folding />
         </state>
       </provider>

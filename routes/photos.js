@@ -4,6 +4,10 @@ var mkdirp = require('mkdirp').mkdirp;
 var photoProperties = {}
 photoProperties['cam1'] = "/Users/youngsoul/DevData/dir1";
 photoProperties['photosroot'] = '/Users/youngsoul/Documents/Development/NodeDev/NodePhoto/public/photosroot';
+
+//photoProperties['cam1'] = "/home/pi/ftproot/foscam1";
+//photoProperties['photosroot'] = '/home/pi/dev/nodejs/NodePhoto/public/photosroot';
+
 var monthIndexToName = ['na', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November','December'];
 var photoMap = null;
 
