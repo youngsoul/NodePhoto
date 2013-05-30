@@ -7,7 +7,9 @@ var ExifImage = require('exif').ExifImage;
 var exif = function(staticPath, photo, callback){
   // We don't care about errors in here - we can always return an undefined exif
   photo.exif = undefined;
+  return callback(null, photo);
 
+  /*
     try {
     new ExifImage({
       image : staticPath   //'resources/photos/Ireland/West Coast/_MG_4174.jpg'
@@ -59,6 +61,7 @@ var exif = function(staticPath, photo, callback){
   } catch (error) {
     return callback(null, photo);
   }
+  */
 }
 
 // source: http://stackoverflow.com/questions/95727/how-to-convert-floats-to-human-readable-fractions

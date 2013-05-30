@@ -1,5 +1,16 @@
-<link href="/css/photos.css" rel="stylesheet" type="text/css">
-<link href="/css/theme.css" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <title>Photo Gallery</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/stylesheets/custom.css" rel="stylesheet" media="screen">
+    <link href="/css/photos.css" rel="stylesheet" type="text/css">
+    <link href="/css/theme.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
 <% if (!album.isRoot){ %>
   <% for (var i=0; i<breadcrumb.length; i++) { %>
   <% if (i==breadcrumb.length-1){ %>
@@ -41,3 +52,5 @@
     <% }) %>
   </ul>
 <% } %>
+</body>
+</html>
