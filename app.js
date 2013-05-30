@@ -86,7 +86,7 @@ app.get('/logout', function(req,res) {
   res.redirect('/login');
 });
 app.get('/photos', ensureLoggedIn('/login'), function(req,res) {
-  photos.clearMap();
+  gallery.middleware({static: 'public', directory: '/photosroot', rootURL: "/gallery"});
   photos.list(req,res);
 });
 app.get('/photo' , ensureLoggedIn('/login'), function(req,res) {
