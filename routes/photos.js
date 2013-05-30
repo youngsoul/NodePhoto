@@ -59,6 +59,9 @@ exports.listByDay = function(req,res) {
 
 };
 
+exports.clearMap = function() {
+  photoMap = null;
+}
 exports.list = function(req, res){
   console.log("photos.list");
   var monthYearLabels = {};
