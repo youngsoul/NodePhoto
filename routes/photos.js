@@ -91,12 +91,15 @@ exports.list = function(req, res){
   res.render('./photos/index', { title: 'Photos here', photoMap: photoMap, monthYearLabels: monthYearLabels });
 };
 
-
-var processFiles=function( files, rootDir ) {
+//000DC5D69412(Foscam1)_0_2013 06 08 104137_0.jpg
+var processFiles=function( files, sourceRootDir ) {
   var photoMap = {};
 
   for( var i = 0; i < files.length; i++) {
     //console.log("file: " + files[i]);
+    var stat = fs.statSync(sourceRootDir + "/" + files[i]);
+    var createTime = stat.ctime.toLocaleTimeString();  // 11:57:15
+
     var parts = files[i].split("_");
     var index = parts[3].split(/\./)[0];
     ////console.log("TS: " + parts[2] + " Index: " + index );
@@ -124,6 +127,7 @@ var processFiles=function( files, rootDir ) {
     photoData.day = day;
     photoData.file = files[i];
     photoData.index = index;
+    photoData.ctime = createTime;
 
     if( photoMap[photoData.date] == null ) {
       photoMap[photoData.date] = new Array();
@@ -143,8 +147,8 @@ var processFiles=function( files, rootDir ) {
  */
     // move file to the gallery directory
 
-    var fromPath = rootDir + "/" + photoData.file;
-    var toPath = photoProperties['photosroot'] + "/" + year+"/"+photoData.monthName+"/"+photoData.day+"/"+photoData.date+"_"+photoData.index+".jpg";
+    var fromPath = sourceRootDir + "/" + photoData.file;
+    var toPath = photoProperties['photosroot'] + "/" + year+"/"+photoData.monthName+"/"+photoData.day+"/"+photoData.date+"_" + photoData.ctime + "_"+photoData.index+".jpg";
     //console.log("from: " + fromPath + ", to: " + toPath);
     if(!fs.existsSync(fromPath)) {
       //console.log("** fromPath does not exist: " + fromPath);
