@@ -89,6 +89,7 @@ app.get('/logout', function(req,res) {
 });
 app.get('/update', ensureLoggedIn('/login'), function(req,res) {
   console.log("get /update");
+  photos.clearMap();
   gallery.middleware({static: 'public', directory: '/photosroot', rootURL: "/gallery"});
   photos.list(req,res);
 });

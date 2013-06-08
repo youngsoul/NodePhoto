@@ -68,6 +68,7 @@ exports.list = function(req, res){
 
 
   if (photoMap == null) {
+    console.log("photoMap is null");
     photoMap = getDailyPhotoSummary(req, res, 'cam1');
 
     if (photoMap != null && photoMap.length > 0) {
@@ -86,6 +87,8 @@ exports.list = function(req, res){
         monthYearLabels[monthYearLabel].unshift(dataObj);
       }
     }
+  } else {
+    console.log("photoMap is NOT null");
   }
 
   res.render('./photos/index', { title: 'Photos here', photoMap: photoMap, monthYearLabels: monthYearLabels });
