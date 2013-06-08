@@ -17,6 +17,8 @@ var os = require('os');
 var gallery = require('./gallery');
 var util = require('util');
 
+var loginName = "foo";
+var loginPassword = "bar";
 
 var app = express();
 
@@ -50,7 +52,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //--------------  setup passport  ----------------
 passport.use(new LocalStrategy( function(username, password, done) {
   console.log("username: " + username + " password: " + password);
-  if( username == "foo" && password == "bar") {
+  if( username == loginName && password == loginPassword) {
     console.log("authenticated");
     return done(null, {username: username, firstname: 'Bob', lastname: 'Builder'});
 
