@@ -85,9 +85,14 @@ app.get('/logout', function(req,res) {
   req.logout();
   res.redirect('/login');
 });
+app.get('/update', ensureLoggedIn('/login'), function(req,res) {
+  console.log("get /update");
+  gallery.middleware({static: 'public', directory: '/photosroot', rootURL: "/gallery"});
+  photos.list(req,res);
+});
 app.get('/photos', ensureLoggedIn('/login'), function(req,res) {
   console.log("get /photos");
-  gallery.middleware({static: 'public', directory: '/photosroot', rootURL: "/gallery"});
+ // gallery.middleware({static: 'public', directory: '/photosroot', rootURL: "/gallery"});
   photos.list(req,res);
 });
 app.get('/photo' , ensureLoggedIn('/login'), function(req,res) {
