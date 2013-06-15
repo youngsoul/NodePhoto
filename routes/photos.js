@@ -95,7 +95,7 @@ exports.list = function(req, res){
 };
 
 //000DC5D69412(Foscam1)_0_2013 06 08 104137_0.jpg
-var processFiles=function( files, sourceRootDir ) {
+var processFiles=function( files, sourceRootDir, cameraName ) {
   var photoMap = {};
 
   for( var i = 0; i < files.length; i++) {
@@ -112,7 +112,7 @@ var processFiles=function( files, sourceRootDir ) {
     var day = timeStamp.substring(6,8);
 
     //-------------------------  create directory structure
-    var targetDirName = photoProperties['photosroot']+"/"+year+"/"+monthIndexToName[Number(month)]+"/"+day;
+    var targetDirName = photoProperties['photosroot']+ "/" + cameraName + "/"+year+"/"+monthIndexToName[Number(month)]+"/"+day;
     //console.log("targetDirName: " + targetDirName);
 
     mkdirp.sync(targetDirName,0755, function(err) {
@@ -151,7 +151,7 @@ var processFiles=function( files, sourceRootDir ) {
     // move file to the gallery directory
 
     var fromPath = sourceRootDir + "/" + photoData.file;
-    var toPath = photoProperties['photosroot'] + "/" + year+"/"+photoData.monthName+"/"+photoData.day+"/"+photoData.date+"_" + photoData.ctime + "_"+photoData.index+".jpg";
+    var toPath = photoProperties['photosroot'] + "/" + cameraName +  "/" + year+"/"+photoData.monthName+"/"+photoData.day+"/"+photoData.date+"_" + photoData.ctime + "_"+photoData.index+".jpg";
     //console.log("from: " + fromPath + ", to: " + toPath);
     if(!fs.existsSync(fromPath)) {
       //console.log("** fromPath does not exist: " + fromPath);
@@ -192,7 +192,7 @@ var getDailyPhotoSummary = function(req,res,cameraName) {
   if( files == null || files.length == 0 ) {
     return photoMap;
   } else {
-    photoMap = processFiles(files, photoProperties[cameraName]);
+    photoMap = processFiles(files, photoProperties[cameraName], cameraName);
 
     return photoMap;
   }
